@@ -1,4 +1,4 @@
-# NextLingo
+# Portfolio
 
 Portfolio realizando con Next.js y Typescript para poder mostrar de una forma mejor mi trabajo y de una manera mas práctica. Espero lo disfruten.
 
@@ -14,7 +14,7 @@ Portfolio realizando con Next.js y Typescript para poder mostrar de una forma me
 
 -🔗: https://portfolio-andreslogares.vercel.app/
 
-# NextLingo
+# Portfolio
 
 Portfolio made with Next.js and Typescript to show my work in a better and more practical way. I hope you enjoy it.
 
