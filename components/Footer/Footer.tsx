@@ -22,7 +22,7 @@ const Footer: NextPage = () => {
                                 className={styles.Links}
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://drive.google.com/file/d/14j_L3Ucm5B86edNt1bCtXBLjizdObNdH/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1t3lkUL7CWuUuNC3u5f2-ltlXHujwpGWh/view?usp=sharing"
                             >
                                 <TextDocument className={styles.icons} />
                                 CV en Ingles
@@ -32,7 +32,7 @@ const Footer: NextPage = () => {
                                 className={styles.Links}
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://drive.google.com/file/d/1KEnZ29HX2MwP-7MF9SJ6D_xuEHxiXrKt/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1nK7WpGJkyxEneNV_IWA8V-4U1HOinYJJ/view?usp=sharing"
                             >
                                 <TextDocument className={styles.icons} />
                                 CV en Español
