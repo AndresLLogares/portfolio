@@ -16,6 +16,7 @@ import { Mongodb } from "@styled-icons/simple-icons/Mongodb";
 import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
 import { Scrumalliance } from "@styled-icons/simple-icons/Scrumalliance";
 import { Nextdotjs } from "@styled-icons/simple-icons/Nextdotjs";
+import { Typescript } from "@styled-icons/simple-icons/Typescript";
 import Animu from "../components/Animu/Animu";
 import Clothbea from "../components/Clothbea/Clothbea";
 import PinkBio from "../components/PinkBio/PinkBio";
@@ -166,6 +167,14 @@ const HomeSpanish: NextPage = () => {
                             </span>
                             <button type="button" name="Hover">
                                 Next.js
+                            </button>
+                        </div>
+                        <div className={styles.buttonContainer}>
+                            <span className={styles.mas}>
+                                <Typescript className={styles.logosHome} />
+                            </span>
+                            <button type="button" name="Hover">
+                                Typescript
                             </button>
                         </div>
                     </div>
