@@ -1,0 +1,149 @@
+$White: #ffffff;
+$Black: #231b1b;
+$Grey: #f8f7ff;
+$Blue: #9381ff;
+$LightBlue: #b8b8ff;
+$Pink: #ffeedd;
+$Salmon: #ffd8be;
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@300&display=swap");
+
+.fonts {
+  font-family: "Abel", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  height: fit-content;
+  width: 100%;
+  background-color: $Blue;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.divTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+  flex-direction: column;
+}
+
+.h4Title {
+  font-family: "Oswald", sans-serif;
+  font-size: 10vh;
+  color: $Black;
+  margin: 0%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-shadow: 1px 1px $White, -1px 1px 0 $White, 1px -1px 0 $White,
+    -1px -1px 0 $White, 0px 1px 0 $White, 0px -1px 0 $White, -1px 0px 0 $White,
+    1px 0px 0 $White, 2px 2px 0 $White, -2px 2px 0 $White, 2px -2px 0 $White,
+    -2px -2px 0 $White, 0px 2px 0 $White, 0px -2px 0 $White, -2px 0px 0 $White,
+    2px 0px 0 $White, 1px 2px 0 $White, -1px 2px 0 $White, 1px -2px 0 $White,
+    -1px -2px 0 $White, 2px 1px 0 $White, -2px 1px 0 $White, 2px -1px 0 $White,
+    -2px -1px 0 $White;
+}
+
+.pSub {
+  width: 100%;
+  font-family: "Abel", sans-serif;
+  font-size: 4vh;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: $Black;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.divButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.buttonLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  height: 4rem;
+  font-size: 3vh;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: $Black;
+  border-radius: 10px 10px 10px 10px;
+  background: $Grey;
+  border: 0.2rem solid $Black;
+  box-shadow: 5px 5px 0 $Black, -5px -5px 0 $Black, -5px 5px 0 $Black,
+    5px -5px 0 $Black;
+  transition: 500ms ease-in-out;
+  &:hover {
+    box-shadow: 20px 5px 0 $Black, -20px -5px 0 $Black;
+    cursor: url(../images/pointer.png), default;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.divSubTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: $Grey;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 10px 10px 10px 10px;
+  border: solid 0.2rem $Black;
+}
+
+@media (max-width: 600px) {
+  .h4Title {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  .divButton {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .divSubTitle {
+    margin-bottom: 10%;
+  }
+  .buttonLink {
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}

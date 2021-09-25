@@ -1,0 +1,153 @@
+$White: #ffffff;
+$Black: #231b1b;
+$Grey: #f8f7ff;
+$Blue: #9381ff;
+$LightBlue: #b8b8ff;
+$Pink: #ffeedd;
+$Salmon: #ffd8be;
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap");
+
+.fonts {
+  font-family: "Abel", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.containerNextLingo {
+  width: 100%;
+  background: url("../images/NextLingo.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
+  height: 50rem;
+}
+
+.containerPinkBio {
+  width: 100%;
+  background: url("../images/PinkBio.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
+  height: 50rem;
+}
+
+.containerClothbea {
+  width: 100%;
+  background: url("../images/Clothbea.webp") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
+  height: 50rem;
+}
+
+.containerAnimu {
+  width: 100%;
+  background: url("../images/Animu.webp") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
+  height: 50rem;
+}
+
+.alignButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  height: 4rem;
+  font-size: 3vh;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: $Grey;
+  border-radius: 10px 10px 10px 10px;
+  background: $Blue;
+  border: 0.2rem solid $Black;
+  box-shadow: 5px 5px 0 $Black, -5px -5px 0 $Black, -5px 5px 0 $Black,
+    5px -5px 0 $Black;
+  transition: 500ms ease-in-out;
+  &:hover {
+    box-shadow: 20px 5px 0 $Black, -20px -5px 0 $Black;
+    cursor: url(../images/pointer.png), default;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .buttonLink {
+    width: 80%;
+  }
+  .containerNextLingo {
+    background: url("../images/NextLingoMini.png") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15%;
+    margin-top: 15%;
+  }
+  .containerPinkBio {
+    background: url("../images/PinkBioMini.png") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15%;
+    margin-top: 15%;
+  }
+  .containerClothbea {
+    background: url("../images/ClothbeaMini.png") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15%;
+    margin-top: 15%;
+  }
+
+  .containerAnimu {
+    background: url("../images/AnimuMini.png") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15%;
+    margin-top: 15%;
+  }
+}

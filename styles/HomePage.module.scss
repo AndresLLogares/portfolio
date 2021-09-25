@@ -1,0 +1,271 @@
+$White: #ffffff;
+$Black: #231b1b;
+$Grey: #f8f7ff;
+$Blue: #9381ff;
+$LightBlue: #b8b8ff;
+$Pink: #ffeedd;
+$Salmon: #ffd8be;
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap");
+
+.fonts {
+  font-family: "Abel", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  height: fit-content;
+  width: 100%;
+  background-color: $Blue;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.divTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 3%;
+  flex-direction: column;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.h4Title {
+  font-family: "Oswald", sans-serif;
+  font-size: 10vh;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  color: $Black;
+  text-shadow: 1px 1px $White, -1px 1px 0 $White, 1px -1px 0 $White,
+    -1px -1px 0 $White, 0px 1px 0 $White, 0px -1px 0 $White, -1px 0px 0 $White,
+    1px 0px 0 $White, 2px 2px 0 $White, -2px 2px 0 $White, 2px -2px 0 $White,
+    -2px -2px 0 $White, 0px 2px 0 $White, 0px -2px 0 $White, -2px 0px 0 $White,
+    2px 0px 0 $White, 1px 2px 0 $White, -1px 2px 0 $White, 1px -2px 0 $White,
+    -1px -2px 0 $White, 2px 1px 0 $White, -2px 1px 0 $White, 2px -1px 0 $White,
+    -2px -1px 0 $White;
+}
+
+.divSubTitle {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: $Grey;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 10px 10px 10px 10px;
+  border: solid 0.2rem $Black;
+}
+
+.pSub {
+  font-family: "Abel", sans-serif;
+  font-size: 6vh;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: $Black;
+  margin: 1%;
+  font-weight: bold;
+}
+
+.upSeparete {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 50%;
+  min-height: 19rem;
+  background-color: $Grey;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 10px 10px 10px 10px;
+  border: solid 0.2rem $Black;
+}
+
+.divImage {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 10px 10px 10px 10px;
+  width: fit-content;
+  height: fit-content;
+  border: solid 0.2rem $Black;
+}
+
+.textBox {
+  margin: 3%;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3vh;
+  color: $Black;
+  font-weight: bold;
+}
+
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
+}
+
+.buttonsBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: $Grey;
+  margin-bottom: 5%;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 10px 10px 10px 10px;
+  border: solid 0.2rem $Black;
+}
+
+.buttonContainer {
+  position: relative;
+  width: 15%;
+  height: 5rem;
+  overflow: hidden;
+  border: 0.2rem solid $Black;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 10px 10px 10px 10px;
+  margin: 2%;
+
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+    letter-spacing: 1px;
+    font-weight: bold;
+    @include button(
+      $Blue,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+      3000%,
+      100%,
+      none,
+      $Grey
+    );
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
+
+    &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+      cursor: url(../images/pointer.png), default;
+    }
+  }
+}
+
+.mas {
+  position: absolute;
+  color: $Black;
+  text-align: center;
+  width: 101%;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  font-size: 3vh;
+  margin-top: 0.6rem;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+.logosHome {
+  max-width: 3.5rem;
+  min-width: 3.5rem;
+  max-height: 3.5rem;
+  min-height: 3.5rem;
+}
+
+@media (max-width: 600px) {
+  .h4Title {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 8vh;
+  }
+  .pSub {
+    font-size: 4vh;
+  }
+  .upSeparete {
+    flex-direction: column;
+  }
+  .divSubTitle {
+    margin-bottom: 10%;
+  }
+  .divImage {
+    margin-bottom: 10%;
+  }
+  .box {
+    width: 100%;
+    text-align: center;
+  }
+  .buttonContainer {
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  }
+}
