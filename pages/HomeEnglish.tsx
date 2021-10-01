@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import Head from "next/head";
 import { Zoom } from "react-awesome-reveal";
 import styles from "../styles/HomePage.module.scss";
 import Me from "../images/CV2.webp";
@@ -26,6 +27,11 @@ const HomeEnglish: NextPage = () => {
 
     return (
         <main className={styles.container}>
+            <Head>
+                <title>Home</title>
+                <meta name="description" content="Created by Andres Logares" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div className={styles.main}>
                 <div className="lines">
                     <div className="line"></div>
