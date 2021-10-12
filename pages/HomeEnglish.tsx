@@ -61,7 +61,7 @@ const HomeEnglish: NextPage = () => {
                                 began to study at the I.A.G. (Argentine Institute of Gastronomy), for 2 years while working in DISCO supermarkets.
                                 Before finishing his degree he had done some internships in restaurants but his great opportunity was to personally
                                 give his CV to the different hotels in Buenos Aires, that is how the Hotel Continental gave him
-                                the opportunity to start as an intern and where he would be for 10 years becoming the hotel's Pastry Chef and which
+                                the opportunity to start as an intern and where he would be for 10 years becoming the hotel´s Pastry Chef and which
                                 gave him the opportunity to know several Latin American countries such as Mexico or Chile.
                             </p>
                             <p className={styles.textBox}>
