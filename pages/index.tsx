@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import React from "react";
 import Head from "next/head";
+import React, { useState, useEffect, ReactChildren } from "react";
 import { Zoom } from "react-awesome-reveal";
 import styles from "../styles/Home.module.scss";
 import { useRouter } from "next/router";
@@ -46,5 +46,6 @@ const Home: NextPage = () => {
     </div>
   );
 };
+
 
 export default Home;

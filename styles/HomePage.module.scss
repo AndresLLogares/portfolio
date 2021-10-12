@@ -103,7 +103,8 @@ $Salmon: #ffd8be;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
+  flex-direction: column;
   width: 50%;
   min-height: 19rem;
   background-color: $Grey;
@@ -127,7 +128,9 @@ $Salmon: #ffd8be;
 .textBox {
   margin: 3%;
   font-family: "Noto Sans", sans-serif;
-  font-size: 3vh;
+  font-size: 2.5vh;
+  margin-top: 1%;
+  margin-bottom: 1%;
   color: $Black;
   font-weight: bold;
 }
